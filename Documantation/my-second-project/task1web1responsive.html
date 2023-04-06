@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:#F5F5F5;
+    }
+    .containerfooter {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr) ;
+    grid-template-rows: 1fr;
+    height: 30px;
+    width: 90%;
+    text-align: center;
+    margin-left: 60px;
+    font-size: 12px;
+    }
+    .main {
+        width: 90%;
+        height: 360px;
+        margin-left: 60px;
+        display: flex;
+    }
+    .leftmain {
+        width: 20%;
+    height: auto;
+    }
+    .rightmain {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .rightmain div {
+        margin-left: 20px;
+    }
+    ul {
+        list-style-type: none;
+    }
+    ul li {
+        margin-top: 10px;
+    }
+    ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    .label1 {
+        width: 100%;
+        height: 30px;
+    }
+    .label2 {
+        background-color: greenyellow;
+        padding: 10px 10px 10px 10px;
+        margin-left: 20PX;
+        }
+    select {
+        width: 200px;
+    }
+    .secondline {
+        position: relative;
+        width: 100%;
+    }
+    .firstline {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .divmainimg {
+        width: 100%;
+        height: 360px;
+        }
+.img11 {
+    width: 100%;
+    height: 350px;
+}
+    .divp {
+        position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  margin-top: 20px;
+}
+.divp div {
+    margin-top: 30px;
+}
+    .boxes {
+    width: 250px;
+    height: 250px;
+    margin-left: 20px;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+}
+.containerboxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+}
+#box1 {
+    background-image: url(image/cat-1.jpg);
+}
+#box2 {
+    background-image: url(image/cat-2.jpg);
+}
+#box3 {
+    background-image: url(image/cat-3.jpg);
+}
+#box4 {
+    background-image: url(image/cat-4.jpg);
+}
+.boxes p {
+    text-align: center;
+    vertical-align: bottom;
+    padding-top: 220px;
+    margin-left: 10px;
+}
+.input2 {
+    width: 400px;
+}
+@media screen and (max-width: 1220px) {
+    .leftmain {
+        width: 90%;
+        height:600px;
+    }
+    .rightmain {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .divmainimg {
+        background-image: url(image/banner.jpg);
+        background-position:fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+        width: 100%;
+        height: 360px;
+        display: flex;
+        flex-wrap: wrap;
+        object-fit: cover;
+        }
+    .firstline div {
+        padding-top: 20px;
+    }    
+    .input2 {
+    width: 200px;
+}    
+.main {
+    display: flex;
+    flex-direction: column;
+}   
+.label1 {
+    width: 100%;
+    }
+    .boxes {
+        margin-top:350px;
+        background-color: greenyellow;
+    }
+}
+    </style>
+<body>
+    <div class="containerfooter">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div>HOME</div>
+        <div>SHOP</div>
+        <div>PAGES</div>
+        <div>BLOG</div>
+        <div>CONTACT</div>
+        <div></div>
+        <div></div>
+        <div>ITEM 150000</div>
+        <div></div>
+    </div>
+    <div class="main">
+        <div class="leftmain">
+            <div class="label1" style="background-color: greenyellow;padding: 10px 10px 10px 10px;margin-left: 20px;">All DEPATMENTS</div>
+            <ul>
+                <li><a href="#">Vegatables</a></li>
+                <li><a href="#">Freach Meat</a></li>
+                <li><a href="#">Fruite & Nut Gifts</a></li>
+                <li><a href="#">Ocean Food</a></li>
+                <li><a href="#">Butter $ Eggs</a></li>
+                <li><a href="#">Fast Food</a></li>
+                <li><a href="#">Freach Onion</a></li>
+                <li><a href="#">Butter $ Eggs</a></li>
+                <li><a href="#">Fast Food</a></li>
+                <li><a href="#">Freach Onion</a></li>
+            </ul>
+        </div>
+        <div class="rightmain">
+            <div class="firstline">
+                <div>
+                    <select>
+                        <option value="cat">All Catgory</option>
+                    </select>
+                </div>
+                <div>
+                    <input class="input2" type="text"  placeholder="What do u need ?">
+                    <label class="label2" for="Search">Search</label>
+                </div>
+                    <div>0787134930</div>
+                </div>
+                <div class="secondline">
+                    <img class="img11" src="image/banner.jpg" alt="">
+                    <div class="divp">
+                        <div>Fruite Freach</div>
+                        <div>Vegatables 100% Oragnic</div>
+                        <div>Free Pickup and Delevery avilable</div>
+                        <div><label style="background-color: greenyellow;padding: 10px 10px 10px 10px;">shop now</label></div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="containerboxes">
+        <div class="boxes" id="box1">
+            <p>Freach Fruite</p>
+        </div>
+        <div class="boxes" id="box2">
+            <p>Vegatables</p>
+        </div>
+        <div class="boxes" id="box3">
+            <p>Drink Fruite</p>
+        </div>
+        <div class="boxes" id="box4">
+            <p>Drink Fruite</p>
+        </div>
+    </div>
+</body>
+</html>
